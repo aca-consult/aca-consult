@@ -1,0 +1,128 @@
+@media(min-width: 900px) {
+  .menu-service {
+  display: block;
+  margin: auto;
+  font-size: 20px !important;
+      padding-top: 2.5vh;
+      text-align: center;
+}
+}
+
+.menu-service {
+      padding-top: 2.5vh;
+  display: block;
+  margin: auto;
+  font-size: 14px;
+text-align: center;
+
+  a{
+    color: $blue-aca;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+    padding-left: 5px;
+    margin: 2px;
+    line-height: 1.65;
+
+  }
+
+  a:hover{
+    width: 100%;
+    border-color: $blue-aca;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 5px;
+    border-style: solid;
+    padding-right: 2px;
+    padding-left: 5px;
+    transition: all 500ms ease;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.07);
+    text-decoration: none;
+}
+
+  a.active{
+    color: $light-blue-aca;
+    text-decoration: none;
+    border-color: $light-blue-aca !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-top: 0px !important;
+    border-bottom: 5px !important;
+    border-style: solid !important;
+}
+}
+
+.content-service{
+  // height: 90vh;
+}
+
+.banner-service {
+      border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+  color: $blue-aca;
+  text-align: center;
+  min-height: 90vh;
+  background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+}
+
+.frame {
+  background-color: #f4f4f4;
+  width:90%;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  min-height: 80vh;
+  // position:block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.tab-content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+// dropdown
+
+article * {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+article section:first-of-type {}
+
+article section:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+article label {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.exp-details {
+  display: none;
+}
+
+.exp-details:checked + div {
+  display: block !important;
+}
+
+.plus{
+  color: $blue-aca;
+}
+.plus:hover {
+  color: $light-blue-aca;
+}
+
+
