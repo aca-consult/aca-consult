@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="content-header">
+    <div class="logo">
+      <p><% link_to '#index' do %>
+          <%= image_tag 'favicon.png', style:'width: 150px;' %>
+          <% end %>
+      </p>
+    </div>
+    <div class="menu">
+      <p><a href="#service"> Services </a></p>
+      <p><a href="#sainttropez"> Saint Tropez </a></p>
+      <p><a href="#paris"> Paris </a></p>
+      <p><a href="#marseille"> Marseille </a></p>
+      <p><a href="#cogolin"> Cogolin </a></p>
+    </div>
+    <% link_to "#" do%>
+      <%= image_tag 'united-kingdom.png', class: 'flag' %>
+    <% end %>
+    <div class="france-defi">
+      <p>Membre du groupe: </p>
+        <% link_to 'https://www.francedefi.fr', target:"_blank" do %>
+          <%= image_tag 'fd-logo.png', style:'height:50px;', class: 'fdi'  %>
+        <% end  %>
+    </div>
+  </div>
+</div>

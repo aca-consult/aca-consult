@@ -9,11 +9,15 @@
 }
 
 .menu-service {
-      padding-top: 2.5vh;
+  padding-top: 2.5vh;
   display: block;
   margin: auto;
   font-size: 14px;
-text-align: center;
+  text-align: center;
+  width: 99%;
+  height: 98%;
+  margin-top: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
   a{
     color: $blue-aca;
@@ -37,7 +41,7 @@ text-align: center;
     padding-right: 2px;
     padding-left: 5px;
     transition: all 500ms ease;
-    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.07);
+
     text-decoration: none;
 }
 
@@ -58,29 +62,39 @@ text-align: center;
 }
 
 .banner-service {
-      border-top: 1px solid $light-gray;
-    border-bottom: 1px solid $light-gray;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
   color: $blue-aca;
   text-align: center;
-  min-height: 90vh;
-  background: #000428;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  // min-height: 90vh;
+  background: $light-gray;  /* fallback for old browsers */
+ //  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+ //  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ //  /* if you have a 70px navbar => height: calc(100vh - 70px); */
 }
 
 .frame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   background-color: #f4f4f4;
-  width:90%;
+  // width:99%;
   margin: auto;
   text-align: left;
   padding: 10px;
-  min-height: 80vh;
+  min-height: 100vh;
+  overflow: scroll;
   // position:block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+@media (max-width:650px) {
+  .frame{
+  display: block;
+}
 
 }
 
@@ -116,6 +130,7 @@ article label {
 
 .exp-details:checked + div {
   display: block !important;
+
 }
 
 .plus{
@@ -125,4 +140,69 @@ article label {
   color: $light-blue-aca;
 }
 
+.card {
+  min-height: 70px;
+  min-width: 300px;
+  margin: 5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  overflow: scroll;
 
+// .card :hover{
+//   border-left: solid 10px;
+// }
+
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+}
+
+
+.card-description a {
+  font-size: 24px;
+}
+.card-description a:hover {
+  text-decoration:none;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.3;
+}
+
+.blockb{
+  text-align: center;
+}
