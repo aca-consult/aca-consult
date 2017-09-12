@@ -157,6 +157,11 @@ article label {
 // }
 
 }
+
+.card:hover{
+  border-left: solid 10px $blue-aca;
+  transition: all 500ms ease;
+}
 .card-user {
   position: absolute;
   right: 10px;
@@ -236,4 +241,19 @@ margin: auto;
     color: black;
     opacity: 1;
   }
+}
+.active{
+  color: $blue-aca!important;
+  text-decoration: none;
+}
+
+.active:visited {
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+.active:focus {
+  text-decoration: none;
 }
