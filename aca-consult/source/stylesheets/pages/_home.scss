@@ -202,11 +202,9 @@ label{
   }
 
 .banner-city {
-  border-top: 1px solid $light-gray;
-  border-bottom: 1px solid $light-gray;
   color: white;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
 }
@@ -220,8 +218,8 @@ label{
 }
 
 .map {
-  padding-top: 30px;
-  height: 30vh;
+  height: 100vh;
+  display: inline !important;
 }
 .bordermap{
     border-radius: 5px;
@@ -243,4 +241,20 @@ label{
 
 .fdi:hover{
   opacity: 1;
+}
+.contactmap{
+
+  width: 60%;
+  height: 100vh;
+  display: inline !important;
+}
+
+.alinea {
+  margin-left: 20px;
+}
+
+.office{
+  display: flex;
+ justify-content:center;
+  flex-direction: column;
 }
