@@ -1,0 +1,52 @@
+<section id="service">
+  <div class="banner-service">
+    <div class="frame">
+      <div class="blocka">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'alpes.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab active" data-target="#comptabilite" href="#comptabilite">Accounting</a></h2>
+          </div>
+        </div>
+        <div class="card"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cogolin.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#finance" href="#finance" >Finance</a></h2>
+          </div>
+        </div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cockpit.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#gestion" href="#gestion">Management </a></h2>
+          </div>
+        </div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#juridique" href="#juridique">Legal </a></h2>
+          </div>
+        </div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'sainttropez.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#rh" href="#rh">Human Resources </a></h2>
+          </div>
+        </div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'marseille.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#social" href="#social">Social</a></h2>
+          </div>
+        </div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'st-tropez.jpg' %>');">
+          <div class="card-description">
+            <h2><a class="tab" data-target="#fo" href="#fo">Family Office </a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="blockb">
+        <%= partial "comptaen" %>
+        <%= partial "juridiqueen" %>
+        <%= partial "financeen" %>
+        <%= partial "socialen" %>
+        <%= partial "gestionen" %>
+        <%= partial "rhen" %>
+        <%= partial "foen" %>
+      </div>
+    </div>
+  </div>
+</section>
