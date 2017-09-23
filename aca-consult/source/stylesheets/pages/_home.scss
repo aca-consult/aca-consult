@@ -211,14 +211,31 @@ label{
 
 
 .banner-content-city {
-  padding-top : 160px;
+  padding: 5px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+height: 100vh;
 }
 
+@media(max-width: 700px){
+  .banner-content-city {
+    font-size: 12px;
+  h2 {
+      font-size: 14px;
+    }
+  .btn-medium {
+    font-size: 12px;
+  }
+}
+
+
+}
+
+
+
 .map {
-  height: 100vh;
   display: inline !important;
 }
 .bordermap{
