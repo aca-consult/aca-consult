@@ -1,10 +1,26 @@
 <div class="tab-content hidden" id="gestion">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cockpit.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#gestion" href="#gestion">Conseils en Management </a></h2>
-          </div>
-        </div>
- <h2>Prévisions</h2>
+
+<br/>
+    <center><%= image_tag 'businessman.png', class: "img-main" %>
+  <h2>Management</h2>
+  <p>Du business plan à sa mise en pratique, nous pouvons vous offrir un conseil de qualité</p><br/><br/>
+  <div class="usp">
+  <div><%= image_tag 'idea.png', class: "img-usp" %><br/>Conseils</div>
+  <div><%= image_tag 'research.png', class: "img-usp" %><br/>Audit</div>
+  <div><%= image_tag 'check-mark.png', class: "img-usp" %><br/>Fiabilité</div>
+  </div>
+  </center>
+  <br/><br/>
+
+  <!-- Large modal -->
+<center><a type="button" class="more" data-toggle="modal" data-target=".management">Pour en savoir plus sur nos conseils en management</a></center>
+
+<div class="modal fade management" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+
+       <div class="modal-content" style="padding:20px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h2>Prévisions</h2>
 
   <article id="wpex360">
     <div><label for="an360"><div class="plus"> Business Model</div> </label></div>
@@ -50,3 +66,7 @@
     </article>
 
 </div>
+    </div>
+  </div>
+</div>
+

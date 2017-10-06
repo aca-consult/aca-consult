@@ -1,11 +1,34 @@
 <div class="tab-content" id="comptabilite">
-  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'alpes.jpg' %>');">
-    <div class="card-description">
-      <h2><a class="tab active" data-target="#comptabilite" href="#comptabilite">Expertise Comptable</a></h2>
-    </div>
+
+<br/>
+    <center><%= image_tag 'bill.png', class: "img-main" %>
+  <h2>Expertise Comptable</h2>
+  <p>Cabinet membre du groupe <%= link_to 'France Défi', 'https://www.francedefi.fr/', class: "more", target: "blank" %> .</p><br/><br/>
+  <div class="usp">
+  <div><%= image_tag 'easy.png', class: "img-usp" %><br/>Expertise</div>
+  <div><%= image_tag 'like.png', class: "img-usp" %><br/>Simplicité</div>
+  <div><%= image_tag 'check-mark.png', class: "img-usp" %><br/>Fiabilité</div>
   </div>
+  </center>
+  <br/><br/>
+
+
+  <!-- Debut modal -->
+  <center><a type="button" class="more" data-toggle="modal" data-target="#compta" >Pour en savoir plus sur nos services comptables</a></center>
+
+
+  <div class="modal fade" id="compta"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" style="padding:20px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+<!-- fin modal -->
+
   <h2>Comptabilité</h2>
-     <article id="wpex1">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"><article id="wpex1">
         <label for="an1"><div class="plus">Tenue de comptabilité</div></label>
           <input class="exp-details" id="an1" type="checkbox">
         <div style="display: none;">
@@ -27,8 +50,7 @@
             <p>Nous assurons la conformité vis-à- vis des règles légales et une image fidèle
     de la réalité de votre entité.</p>
           </div>
-      </article>
-      <article id="wpex7">
+      </article> <article id="wpex7">
         <div><label for="an7"><div class="plus"> Comptes annuels</div> </label></div>
         <input class="exp-details" id="an7" type="checkbox">
         <div style="display: none;">
@@ -36,7 +58,8 @@
     de la réalité de votre entité de vos comptes annuels.</p>
         </div>
       </article>
-      <article id="wpex8">
+
+    <article id="wpex8">
         <label for="an8"><div class="plus"> Reporting fce/us </div> </label>
         <input class="exp-details" id="an8" type="checkbox">
         <div style="display: none;">
@@ -45,7 +68,8 @@
         </div>
       </article>
 
-      <article id="wpex3">
+    </div>
+      <div class="col-sm-4"><article id="wpex3">
         <div><label for="an3"><div class="plus">IFRS </div></label></div>
         <input class="exp-details" id="an3" type="checkbox">
         <div style="display: none;">
@@ -78,6 +102,14 @@
     personnel.</p>
         </div>
       </article>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
       <h2>Audit</h2>
       <article id="wpex13">
         <div><label for="an13"><div class="plus">Légal</div></label>
@@ -113,5 +145,8 @@
           <p> Nous pouvons réaliser avec l’aide de plusieurs méthodes, et par référence au marché, un dossier complet.</p>
         </div>
       </article>
-
+    </div>
+<!-- modal -->
+    </div>
+  </div>
 </div>

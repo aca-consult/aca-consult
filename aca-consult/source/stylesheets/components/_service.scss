@@ -209,6 +209,17 @@ article label {
 .blocka{
   margin-top: 50px;
 
+  a{
+    color: $blue-aca;
+    opacity:1;
+
+  }
+    a:hover{
+
+    opacity:0.6;
+    text-decoration:none;
+  }
+
 }
 
 .blockb{
@@ -256,5 +267,43 @@ margin: auto;
   text-decoration: none;
 }
 .active:focus {
+  text-decoration: none;
+}
+
+.usp{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+}
+
+.img-menu{
+  height: 60px;
+  padding: 1px;
+  background-color: $blue-aca;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.img-main{
+  height: 100px;
+  padding: 1px;
+  background-color: $blue-aca;
+  border-radius: 50px;
+}
+
+.img-usp{
+height:50px;
+padding:1px;
+background-color: $blue-aca;
+border-radius: 25px;
+}
+
+.more{
+  color: $blue-aca;
+
+}
+.more:hover{
+  color: $light-blue-aca;
   text-decoration: none;
 }

@@ -1,9 +1,28 @@
 <div class="tab-content hidden" id="finance">
-        <div class="card"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cogolin.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#finance" href="#finance" >Conseils Financiers</a></h2>
-          </div>
-        </div>
+
+<br/>
+    <center><%= image_tag 'graph.png', class: "img-main" %>
+  <h2>Conseils Financiers</h2>
+  <p>Ne vous contentez de conseils financiers génériques. Nous offrons un service adapté à vos besoins. </p><br/><br/>
+  <div class="usp">
+  <div><%= image_tag 'calendar.png', class: "img-usp" %><br/>Planification</div>
+  <div><%= image_tag 'business-presentation.png', class: "img-usp" %><br/>Expertise</div>
+  <div><%= image_tag 'shield.png', class: "img-usp" %><br/>Securité</div>
+  </div>
+  </center>
+  <br/><br/>
+
+
+  <!-- Debut modal -->
+  <center><a type="button" class="more" data-toggle="modal" data-target=".finance" >Pour en savoir plus sur nos services financiers</a></center>
+
+
+  <div class="modal fade finance" id="finance" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" style="padding:20px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+<!-- fin modal -->
  <h2>Finance</h2>
  <article id="wpex20">
     <label for="an20"><div class="plus">Recherche de financement</div></label>
@@ -34,4 +53,8 @@
 En fonction de votre activité, des constats passés et des prévisions, nous vous accompagnons dans l’optimisation de la gestion de trésorerie.</p>
     </div>
   </article>
+</div>
+<!-- modal -->
+    </div>
+  </div>
 </div>

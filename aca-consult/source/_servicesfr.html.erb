@@ -2,41 +2,20 @@
   <div class="banner-service">
     <div class="frame">
       <div class="blocka">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'alpes.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab active" data-target="#comptabilite" href="#comptabilite">Expertise Comptable</a></h2>
-          </div>
-        </div>
-        <div class="card"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cogolin.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#finance" href="#finance" >Conseils Financiers</a></h2>
-          </div>
-        </div>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cockpit.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#gestion" href="#gestion">Conseils en Management </a></h2>
-          </div>
-        </div>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#juridique" href="#juridique">Conseils Juridique </a></h2>
-          </div>
-        </div>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'sainttropez.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#rh" href="#rh">Ressources Humaines </a></h2>
-          </div>
-        </div>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'marseille.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#social" href="#social">Conseils social</a></h2>
-          </div>
-        </div>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'st-tropez.jpg' %>');">
-          <div class="card-description">
-            <h2><a class="tab" data-target="#fo" href="#fo">Family Office </a></h2>
-          </div>
-        </div>
+
+
+
+<p>            <a class="tab active" data-target="#comptabilite" href="#comptabilite"><%= image_tag 'bill.png',class: "img-menu" %>Expertise Comptable</a></p>
+<p><a class="tab" data-target="#finance" href="#finance" ><%= image_tag 'graph.png',class: "img-menu" %>Conseils Financiers</a></p>
+<p><a class="tab" data-target="#gestion" href="#gestion"><%= image_tag 'businessman.png',class: "img-menu" %>Conseils en Management </a></p>
+<p><a class="tab" data-target="#juridique" href="#juridique"><%= image_tag 'auction.png',class: "img-menu"  %>Conseils Juridique </a></p>
+<p><a class="tab" data-target="#rh" href="#rh"><%= image_tag 'network.png',class: "img-menu" %>Ressources Humaines </a></p>
+<p><a class="tab" data-target="#social" href="#social"><%= image_tag 'archive.png', class: "img-menu" %>Conseils social</a></p>
+<p><a class="tab" data-target="#fo" href="#fo"><%= image_tag 'record.png', class: "img-menu" %>Family Office </a></p>
+
+
+
+
       </div>
       <div class="blockb">
         <%= partial "comptafr" %>
