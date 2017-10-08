@@ -207,7 +207,7 @@ article label {
 }
 
 .blocka{
-  margin-top: 50px;
+  margin-top: 30px;
 
   a{
     color: $blue-aca;
@@ -226,8 +226,8 @@ article label {
   text-align: left;
   background-color: white;
   margin: 10px;
-  padding: 10px;
-  width: 50vw;
+  padding: 20px;
+  width: 55vw;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
 }
@@ -235,6 +235,11 @@ article label {
   .blockb {
 width:95%;
 margin: auto;
+}
+ .blocka {
+margin: auto;
+text-align: center;
+font-size: 16px;
 }
 }
 
@@ -278,7 +283,7 @@ align-items: center;
 }
 
 .img-menu{
-  height: 60px;
+  height: 50px;
   padding: 1px;
   background-color: $blue-aca;
   border-radius: 40px;
