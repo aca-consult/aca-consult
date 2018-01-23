@@ -39,7 +39,7 @@ label{
 }
 
 .content {
-  background-color: $blue-aca;
+  // background-color: $blue-aca;
   margin-left: 200px;
   height: 100vh;
 
@@ -47,7 +47,7 @@ label{
 
 @media(max-width: 700px) {
 .content {
-    background-color: $blue-aca;
+    // background-color: $blue-aca;
     margin-left: 0px;
 
   }
